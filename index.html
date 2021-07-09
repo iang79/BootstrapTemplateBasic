@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/estilos.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Demo Bootstrap 01</title>
+    
+  </head>
+  <body>
+      <nav>
+        <h1>BOOTSTRAP</h1>
+      </nav>
+    
+    <main>
+        <fieldset class="col-6">
+                <legend>BASIC</legend>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+        </fieldset>
+
+        <fieldset class="col-6">
+            <legend>SIZING</legend>
+                <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+                <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+        </fieldset>
+
+        <fieldset class="col-6">
+            <legend>DISABLED</legend>
+                <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+                <input class="form-control" type="text" value="Disabled readonly input" aria-label="Disabled input example" disabled readonly>
+        </fieldset>
+
+        <fieldset class="col-6">
+            <legend>READONLY</legend>
+                <input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly>
+        </fieldset>
+
+        <fieldset class="col-8">
+            <legend>READONLY PLAIN TEXT</legend>
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword">
+                </div>
+              </div>
+              <form class="row g-3">
+                <div class="col-auto">
+                  <label for="staticEmail2" class="visually-hidden">Email</label>
+                  <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+                </div>
+                <div class="col-auto">
+                  <label for="inputPassword2" class="visually-hidden">Password</label>
+                  <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+                </div>
+              </form>
+        </fieldset>
+        <fielset class="col-8">
+            <legend>FILE INPUT</legend>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Default file input example</label>
+                <input class="form-control" type="file" id="formFile">
+              </div>
+              <div class="mb-3">
+                <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </div>
+              <div class="mb-3">
+                <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+                <input class="form-control" type="file" id="formFileDisabled" disabled>
+              </div>
+              <div class="mb-3">
+                <label for="formFileSm" class="form-label">Small file input example</label>
+                <input class="form-control form-control-sm" id="formFileSm" type="file">
+              </div>
+              <div>
+                <label for="formFileLg" class="form-label">Large file input example</label>
+                <input class="form-control form-control-lg" id="formFileLg" type="file">
+              </div>
+        </fielset>
+        <fieldset>
+            <legend>COLOR</legend>
+            <label for="exampleColorInput" class="form-label">Color picker</label>
+            <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+        </fieldset>
+        <fieldset class="col-8">
+            <legend>DATALISTS</legend>
+            <label for="exampleDataList" class="form-label">Datalist example</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                <datalist id="datalistOptions">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+                </datalist>
+        </fieldset>
+    </main>
+    <footer>
+        <p>&copy;2021 Inaki Ang</p>
+        <a href="#">Arriba</a>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
